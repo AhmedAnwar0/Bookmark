@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaQuiry.css">
+    <title>BookMark</title>
+</head>
+
+<body>
+    <section class="landing-page">
+        <div class="container">
+            <div class="logo">
+                <h1>Bookmark</h1>
+            </div>
+            <div class="content">
+                <div class="gif">
+                    <img id="img" src="imgs/1.gif" alt="gif">
+                </div>
+                <div class="form-content">
+                    <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                            class="fa-solid fa-bookmark"></i></h2>
+                    <form id="form">
+                        <div class="form-control ">
+                            <label for="siteName"><i class="fa-solid fa-book-bookmark"></i>Site Name</label>
+                            <input autocomplete="off" type="text" placeholder="Bookmark Name" id="siteName">
+                            <i class="validate succ fa-solid fa-circle-check"></i>
+                            <i class="validate err fa-solid fa-circle-exclamation"></i>
+                            <small></small>
+                        </div>
+                        <div class="form-control ">
+                            <label for="url"><i class="fa-solid fa-link"></i>Site Url</label>
+                            <input autocomplete="off" type="text" placeholder="WebSite Url" id="url">
+                            <i class="validate succ fa-solid fa-circle-check"></i>
+                            <i class="validate err fa-solid fa-circle-exclamation"></i>
+                            <small></small>
+                        </div>
+                        <button id="add" type="button">Add</button>
+                        <button id="clear" type="button">Clear</button>
+                    </form>
+                </div>
+            </div>
+            <div id="Valid-url" class="valid-url">
+            </div>
+        </div>
+    </section>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
